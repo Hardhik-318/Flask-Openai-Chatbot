@@ -46,8 +46,6 @@ def chat():
     )
 }
 
-
-
     system_prompt = mode_prompts.get(mode, "You are a helpful assistant.")
 
     try:
