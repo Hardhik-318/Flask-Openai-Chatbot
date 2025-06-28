@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="chatbox">
+    <div class="header">
+      <h1>Neura-AI</h1>
+    </div>
+
+    <div class="chat-area"></div>
+<div class="mode-btn-group" style="width: 95%; padding: 10px; font-family: sans-serif; font-size: 14px;">
+  <button class="mode-btn active" data-mode="ask">Answer a Question</button>
+  <button class="mode-btn" data-mode="summarize">Summarize Text</button>
+  <button class="mode-btn" data-mode="creative">Generate Creative Content</button>
+</div>
+
+
+    <div class="text-area">
+      <input type="text" placeholder="Type your message here...">
+      <button class="send-btn">
+        <i class="fa-solid fa-circle-up"></i>
+      </button>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
