@@ -1,7 +1,7 @@
 
-# Neura-AI — Custom AI Chatbot using Flask and GitHub-hosted OpenAI API
+# Nora — Custom AI Chatbot using Flask and GitHub-hosted OpenAI API
 
-**Neura-AI** is a lightweight and visually appealing web-based chatbot that enables users to interact in three intelligent modes:
+**Nora** is a lightweight and visually appealing web-based chatbot that enables users to interact in three intelligent modes:
 - Answer a Question  
 - Summarize Text  
 - Generate Creative Content  
