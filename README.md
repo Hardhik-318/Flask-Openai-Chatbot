@@ -57,6 +57,37 @@ requirements.txt     -> Python dependencies
 
 ---
 
+##  Setup Instructions
+
+1. **Install the required dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Get your API key from GitHub Marketplace**:
+   - Visit [https://github.com/marketplace](https://github.com/marketplace)
+   - Subscribe to **OpenAI GPT-4o mini**
+   - Generate your **GitHub-issued API key**
+
+3. **Create a `.env` file** inside the project folder and add the following line:
+   ```
+   GITHUB_TOKEN=your_github_api_key_here
+   ```
+
+4. **Run the application**:
+   ```bash
+   python app.py
+   ```
+
+5. **Open your browser and go to**:
+   [http://127.0.0.1:5000](http://127.0.0.1:5000)
+
+---
+
+Start chatting with **Nora**!
+
+---
+
 ## Limitations
 - **API Key Security:** The GitHub token is required for API access  
   - Must not be exposed publicly  
