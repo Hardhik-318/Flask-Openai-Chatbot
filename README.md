@@ -113,6 +113,8 @@ python-dotenv
 ## Developed By
 
 **Hardhik**
-Email: hardhik318@gmail.com..
-GitHub: [github.com/Hardhik-318](https://github.com/Hardhik-318)..
+Email: hardhik318@gmail.com
+
+GitHub: [github.com/Hardhik-318](https://github.com/Hardhik-318)
+
 LinkedIn: [linkedin.com/in/hardhik-balla](https://linkedin.com/in/hardhik-balla)
