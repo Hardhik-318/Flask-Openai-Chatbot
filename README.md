@@ -1,32 +1,36 @@
-
 # Nora — Custom AI Chatbot using Flask and GitHub-hosted OpenAI API
 
-**Nora** is a lightweight and visually appealing web-based chatbot that enables users to interact in three intelligent modes:
-- Answer a Question  
-- Summarize Text  
-- Generate Creative Content  
+**🔗 Live Demo: [nora-chatbot.onrender.com](https://nora-chatbot.onrender.com)**
 
-The project integrates a modern front-end interface with a Flask-powered Python backend that communicates with a custom OpenAI-compatible API hosted via GitHub (GPT-4o-mini).
+Nora is a lightweight, visually appealing web-based chatbot that lets users interact in three intelligent modes:
 
----
+- **Answer a Question**
+- **Summarize Text**
+- **Generate Creative Content**
+
+Try it live — no installation needed. The link above is a fully working deployment.
+
+## Overview
+
+Nora integrates a modern front-end interface with a Flask-powered Python backend that communicates with a custom OpenAI-compatible API hosted via GitHub (GPT-4o-mini).
 
 ## Features
-- Three AI interaction modes (Ask, Summarize, Creative)  
-- Real-time response with typing effect  
-- Responsive user interface with glowing visual effects  
-- Clean separation of backend and frontend, suitable for deployment  
-- Distinct styling for user and AI messages  
 
----
+- Three AI interaction modes (Ask, Summarize, Creative)
+- Real-time response with typing effect
+- Responsive UI with glowing visual effects
+- Clean separation of backend and frontend, suitable for deployment
+- Distinct styling for user and AI messages
 
 ## AI Model and Architecture
-- **Model:** openai/gpt-4o-mini (via GitHub-hosted custom endpoint)  
-- **API:** OpenAI-compatible, accessed using a GitHub token  
-- **Prompt Engineering:** Dynamic prompts based on selected mode  
-- **Token Limit:** Up to 1000 tokens per response  
-- **Temperature:** Configurable per mode (e.g., higher for creative responses)  
 
----
+| | |
+|---|---|
+| **Model** | `openai/gpt-4o-mini` (via GitHub-hosted custom endpoint) |
+| **API** | OpenAI-compatible, accessed using a GitHub token |
+| **Prompt Engineering** | Dynamic prompts based on selected mode |
+| **Token Limit** | Up to 1000 tokens per response |
+| **Temperature** | Configurable per mode (e.g., higher for creative responses) |
 
 ## Project Structure
 
@@ -41,74 +45,56 @@ static/
 requirements.txt     -> Python dependencies
 ```
 
----
+## How to Use (Live Demo)
 
-## How to Use
+1. Open **[nora-chatbot.onrender.com](https://nora-chatbot.onrender.com)**
+2. Choose a mode from the top (Ask, Summarize, Creative)
+3. Enter your input (e.g., a question or passage)
+4. Press the send button or hit Enter to receive a response
 
-### Frontend
-- Choose a mode from the top (Ask, Summarize, Creative)  
-- Enter your input (e.g., a question or passage)  
-- Press the send button or hit Enter to receive a response  
+Under the hood, the backend detects the selected mode, sends the input and a mode-specific generated prompt to GPT-4o-mini, and returns the response to the interface.
 
-### Backend
-- Detects and processes selected mode  
-- Sends the user input and generated prompt to the GPT-4o-mini model  
-- Receives and returns a response to be displayed in the interface  
+## Run It Locally (optional)
 
----
+Prefer to run Nora on your own machine instead of the hosted version? Here's how:
 
-##  Setup Instructions
+<details>
+<summary>Local setup instructions</summary>
 
-1. **Install the required dependencies**:
-   ```bash
+1. Install dependencies:
+   ```
    pip install -r requirements.txt
    ```
-
-2. **Get your API key from GitHub Marketplace**:
-   - Visit [https://github.com/marketplace](https://github.com/marketplace)
-   - Subscribe to **OpenAI GPT-4o mini**
-   - Generate your **GitHub-issued API key**
-
-3. **Create a `.env` file** inside the project folder and add the following line:
+2. Get your API key from [GitHub Marketplace](https://github.com/marketplace):
+   - Subscribe to OpenAI GPT-4o mini
+   - Generate your GitHub-issued API key
+3. Create a `.env` file in the project folder:
    ```
    GITHUB_TOKEN=your_github_api_key_here
    ```
-
-4. **Run the application**:
-   ```bash
+4. Run the app:
+   ```
    python app.py
    ```
+5. Open `http://127.0.0.1:5000` in your browser
 
-5. **Open your browser and go to**:
-   [http://127.0.0.1:5000](http://127.0.0.1:5000)
-
----
-
-Start chatting with **Nora**!
-
----
+</details>
 
 ## Limitations
-- **API Key Security:** The GitHub token is required for API access  
-  - Must not be exposed publicly  
-  - Stored securely in a `.env` file using `python-dotenv`  
-- **Model Capability:** GPT-4o-mini is optimized for speed and light usage but is less capable than larger models  
-- **Rate Limits:** Dependent on API limits and hosting performance  
 
----
+- **API Key Security** — the GitHub token is required for API access, must not be exposed publicly, and is stored securely via `.env` and `python-dotenv`
+- **Model Capability** — GPT-4o-mini is optimized for speed and light usage, but less capable than larger models
+- **Rate Limits** — dependent on API limits and hosting performance
 
 ## Advantages
-- Clear separation of frontend and backend code  
-- Custom user interface without reliance on heavy front-end frameworks  
-- Secure API token handling using environment variables  
-- Easy to extend with new modes or alternate models  
-- Compatible with deployment setups such as Render (backend) and GitHub Pages (frontend)  
 
----
+- Clear separation of frontend and backend code
+- Custom UI without reliance on heavy front-end frameworks
+- Secure API token handling using environment variables
+- Easy to extend with new modes or alternate models
+- Compatible with deployment setups such as Render (backend) and GitHub Pages (frontend)
 
-## Requirements
-
-The following packages should be listed in `requirements.txt`:
+## Requirements (`requirements.txt`)
 
 ```
 Flask
@@ -116,20 +102,17 @@ openai
 python-dotenv
 ```
 
----
-
 ## Future Enhancements
-- Implement conversation history  
-- Add user authentication and login system  
-- Integrate speech-to-text and text-to-speech features  
-- Include a UI-based model selector  
-- Streamline and document deployment process for broader accessibility  
 
----
+- Implement conversation history
+- Add user authentication and login system
+- Integrate speech-to-text and text-to-speech features
+- Include a UI-based model selector
+- Streamline and document deployment process for broader accessibility
 
 ## Developed By
 
-**Hardhik**  
-Email: [hardhik318@gmail.com](mailto:hardhik318@gmail.com)  
-GitHub: [github.com/Hardhik-318](https://github.com/Hardhik-318)  
-LinkedIn: [linkedin.com/in/hardhik-balla](https://linkedin.com/in/hardhik-balla)  
+**Hardhik**
+Email: hardhik318@gmail.com
+GitHub: [github.com/Hardhik-318](https://github.com/Hardhik-318)
+LinkedIn: [linkedin.com/in/hardhik-balla](https://linkedin.com/in/hardhik-balla)
